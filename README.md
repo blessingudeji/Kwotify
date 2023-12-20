@@ -1,5 +1,9 @@
 # Kwotify
-Kwotify is a platform designed to curate and share inspirational quotes. This project utilizes a combination of HTML, Tailwind CSS, Alpine.js, Superbase, and Vite to provide users with a seamless experience in exploring, discovering, and engaging with motivational quotes.
+
+## Introduction
+Kwotify is a platform designed to curate and share inspirational quotes. It provides users with a seamless experience in exploring, discovering, and engaging with motivational quotes.
+
+[Project Blog Article](https://medium.com/@blessingoudeji/kwotify-random-quotes-generator-a-tailwind-alpine-js-and-superbase-project-f3ad230543eb)
 
 ## Technologies Used
 #### HTML: Used as the primary markup language to structure the Kwotify platform.
@@ -37,4 +41,7 @@ npm run dev  # or yarn dev
  This command will compile the project and launch a local server. Open your browser and visit http://localhost:3000 to view Kwotify.
 
 ## Contributing
-We welcome contributions from the community! If you encounter any bugs or have ideas for enhancements, please submit an issue or create a pull request.
+We welcome contributions from the community.
+
+ **Author:**
+ [Blessing Udeji](https://www.linkedin.com/in/blessing-udeji-0239b8206/)
