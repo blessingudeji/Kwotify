@@ -2,11 +2,11 @@
 Kwotify is a platform designed to curate and share inspirational quotes. This project utilizes a combination of HTML, Tailwind CSS, Alpine.js, Superbase, and Vite to provide users with a seamless experience in exploring, discovering, and engaging with motivational quotes.
 
 ## Technologies Used
-# HTML: Used as the primary markup language to structure the Kwotify platform.
-# Tailwind CSS: Leveraged for crafting the responsive and aesthetically appealing user interface components.
-# Alpine.js: Empowered the frontend with interactivity and dynamic functionalities, enhancing user engagement.
-# Superbase: Integrated as the database for efficient management and storage of quote data.
-# Vite: Utilized as the build tooling system for a fast and optimized development environment.
+## HTML: Used as the primary markup language to structure the Kwotify platform.
+## Tailwind CSS: Leveraged for crafting the responsive and aesthetically appealing user interface components.
+## Alpine.js: Empowered the frontend with interactivity and dynamic functionalities, enhancing user engagement.
+## Superbase: Integrated as the database for efficient management and storage of quote data.
+## Vite: Utilized as the build tooling system for a fast and optimized development environment.
 
 ## Getting Started
 To run the Kwotify project locally, ensure you have the following installed:
