@@ -17,6 +17,8 @@
     >
       Ready to save your quotes?
     </p>
+
+
     <form
       id="SignUpForm"
       x-data="signup"
@@ -32,69 +34,95 @@
           Sign Up
         </h3>
 
-        <!--Email input-->
+       <!--FullName input-->
+       <div class="flex flex-col mt-2.5">
+        <input 
+        type="text" 
+        placeholder="Full Name" 
+        id="name" 
+        autocomplete="name" 
+        required 
+        x-model="name"
+        class="w-80 h-10 border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-black-400 font-light font-['Montserrat'] focus:ring-2 focus:ring-inset sm:text-sm sm:leading-6" />
+        <span x-text="errors['name']" class="text-red-500 text-xs max-w-sm"></span>
+      </div>
 
-        <div class="flex flex-col mt-2.5">
-          <input
-            type="email"
-            placeholder="Email Address"
-            id="email"
-            autocomplete="email"
-            required
-            x-model="email"
-            class="w-80 h-10 border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-black-400 font-light font-['Montserrat'] focus:ring-2 focus:ring-inset sm:text-sm sm:leading-6"
-          />
-          <span x-text="errors['email']" class="text-red-500 text-xs max-w-sm"></span>
-        </div>
+      <!--Email input-->
 
-        <!--Password Input-->
-        <div class="flex flex-col mt-2.5">
-          <input
-            type="password"
-            placeholder="Create Password"
-            id="password"
-            autocomplete="password"
-            required
-            x-model="password"
-            class="w-full h-10 border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-black-400 font-light font-['Montserrat'] focus:ring-2 focus:ring-inset sm:text-sm sm:leading-6"
-          />
-          <span x-text="errors['password']" class="text-red-500 text-xs max-w-sm"></span>
-        </div>
-        <!--Confirm Password Input-->
-        
+      <div class="flex flex-col mt-2.5">
+        <input
+          type="email"
+          placeholder="Email Address"
+          id="email"
+          autocomplete="email"
+          required
+          x-model="email"
+          class="w-80 h-10 border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-black-400 font-light font-['Montserrat'] focus:ring-2 focus:ring-inset sm:text-sm sm:leading-6"
+        />
+        <span x-text="errors['email']" class="text-red-500 text-xs max-w-sm"></span>
+      </div>
 
-        <div
-          class="flex flex-row justify-center items-center mt-8 text-base font-medium font-['Montserrat']"
-        >
-          <div class="mx-auto mt-3">
-            <button
-              class="text-white font-light px-6 py-3 bg-fuchsia-800"
-              :disabled="loading"
-              type="submit"
-            >
-              <iconify-icon
-                icon="line-md:loading-twotone-loop"
-                class="text-white"
-                :class="loading ? '' : 'hidden'"
-              ></iconify-icon>
-              Register
-            </button>
-          </div>
+      <!--Username input-->
+      <div class="flex flex-col mt-2.5">
+        <input 
+         type="text" 
+         placeholder="Username" 
+         id="username" 
+         autocomplete="username" 
+         required 
+         x-model="name"
+         class="w-80 h-10 border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-black-400 font-light font-['Montserrat'] focus:ring-2 focus:ring-inset sm:text-sm sm:leading-6" />
+        <span x-text="errors['name']" class="text-red-500 text-xs max-w-sm"></span>
+      </div>
+
+      <!--Password Input-->
+      <div class="flex flex-col mt-2.5">
+        <input 
+          type="password"
+          placeholder="Create Password"
+          id="password"
+          autocomplete="on"
+          required
+          x-model="password"
+          class="w-full h-10 border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-black-400 font-light font-['Montserrat'] focus:ring-2 focus:ring-inset sm:text-sm sm:leading-6"
+        />
+        <span x-text="errors['password']" class="text-red-500 text-xs max-w-sm"></span>
+      </div>
+      <!--Confirm Password Input-->
+      
+
+      <div
+        class="flex flex-row justify-center items-center mt-8 text-base font-medium font-['Montserrat']"
+      >
+        <div class="mx-auto mt-3">
+          <button
+            class="text-white font-light px-6 py-3 bg-fuchsia-800"
+            :disabled="loading"
+            type="submit"
+          >
+            <iconify-icon
+              icon="line-md:loading-twotone-loop"
+              class="text-white"
+              :class="loading ? '' : 'hidden'"
+            ></iconify-icon>
+            Register
+          </button>
         </div>
       </div>
-    </form>
-    <div
-      class="flex justify-center gap-2 pt-3 items-center font-light font-['Montserrat'] text-sm"
-    >
-      <p>Already have an account?</p>
-      <a
-        class="text-fuchsia-700 font-light font-['Montserrat']"
-        href="login.html"
-        >Sign In</a
-      >
     </div>
+  </form>
+  <div
+    class="flex justify-center gap-2 pt-3 items-center font-light font-['Montserrat'] text-sm"
+  >
+    <p>Already have an account?</p>
+    <a
+      class="text-fuchsia-700 font-light font-['Montserrat']"
+      href="login.html"
+      >Sign In</a
+    >
+  </div>
 
-    <script type="module" src="./src/index.js"></script>
-    <script src="https://code.iconify.design/iconify-icon/1.0.8/iconify-icon.min.js"></script>
-  </body>
+  <script type="module" src="./src/index.js"></script>
+  <script src="https://code.iconify.design/iconify-icon/1.0.8/iconify-icon.min.js"></script>
+</body>
 </html>
